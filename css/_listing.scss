@@ -1,0 +1,294 @@
+
+.listing-hero{
+    @include hero();
+    background: url(/images/listing/listing-hero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 80vh;
+}
+
+// SALES PROPERTY
+
+.sale-property{
+    padding: 10rem 0;
+    background: #f0eded;
+    padding-bottom: 6rem;
+
+    .section-title{
+        font-size: calc(1.2rem + 1vw);
+        margin-bottom: 3rem;
+    }
+    .container{
+        max-width: 1200px;
+        padding: 2rem;
+    }
+       
+    .sale-property-card{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        
+        .card-content{
+            padding: 2rem;
+            background: #fff;
+            
+        }
+        
+            .prop-content{
+                text-align: center;
+                background: #fff;
+                .heading{
+                    font-size: calc(1rem + .8vw);
+                    color: black;
+                    padding: 1rem 0;
+                    font-family: $heading-font;
+                }
+                .price{
+                    font-weight: bold;
+                    margin-bottom: .7rem;
+                    font-size: calc(.7rem + .7vw);
+                }
+                .desc{
+                    font-size: calc(.6rem + .5vw);
+                    margin-bottom: 1.5rem;
+                }
+            }
+        
+    }
+}
+
+// LISTING PLAZA
+
+.listing-plaza{
+    background: url(/images/listing/listing-plaza.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    height: 100vh;
+    text-align: left;
+    .container{
+        padding-top: 8rem;
+    }
+    .plaza-card{
+        padding: 1rem 2.5rem;
+        background: #fff;
+        max-width: 31rem;
+        text-align: left;
+        z-index: 5;
+        .heading{
+            font-size: calc(1rem + .8vw);
+            color: black;
+            padding: .2rem 0;
+            font-family: $heading-font;
+            text-align: left;
+        }
+        .price{
+            font-weight: bold;
+            margin-bottom: 1.5rem;
+            font-size: calc(.7rem + .7vw);
+        }
+        .desc {
+            line-height: 1.5;
+        }
+
+        .plaza-feature{
+            margin: 2rem 0;
+        }
+        .button{
+            text-align: left;
+            .btn-secondary{
+                display: inline-block;
+                padding: .7rem 5rem;
+            }
+        }
+    }
+}
+
+// TESTIMONIAL 
+.section-testimonial{
+   @extend %section-testimonial;
+
+    .testimonial-content{
+        position: relative;
+        z-index: 1;
+        text-align: center;
+        padding-top: 15vw;
+        .testimonial-title{
+            text-align: center;
+            font-size: calc(1.3rem + 2vw);
+        }
+    }
+
+   
+
+    .button{
+        text-align: center;
+        margin-top: 3rem;
+        margin-bottom: 1.5rem;
+        
+        .btn{
+            padding: 1rem 8rem;
+            font-size: 1.3rem;
+            background: black;
+            border: none;
+            font-weight: 500;
+            &:hover{
+                background: lighten(black, 10);
+                color: #fff;
+            }
+        }
+        
+    }
+}
+
+
+
+// FOOTER
+
+.section-footer{
+    background: #000;
+    text-align: center;
+    padding: 2rem;
+    color: #fff;
+    
+
+    p{
+        font-size: calc(.5rem + .5vw);
+    }
+}
+
+
+// MEDIA QUERIES
+
+@media(max-width: 950px){
+
+    .section-footer{
+        p{
+            font-size: calc(.6rem + .7vw);
+        }
+    }
+    .sale-property{
+    
+        .sale-property-card {
+            
+    
+            .prop-content{
+                .desc{
+                    font-size: calc(.76rem + .5vw);
+                    margin-bottom: 1.5rem;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 786px){
+
+.listing-hero{
+    .hero-content {
+        width: 80vw;
+        .section-heading{
+                padding: 1.5rem 2rem;
+          
+        }
+    }
+}
+
+.sale-property{
+    
+    .sale-property-card {
+        grid-template-columns: 1fr;
+
+        
+    }
+}
+
+
+.listing-plaza{
+    .plaza-card{
+        max-width: 80vw;
+        margin: 0 auto;
+
+        .button{
+            
+            .btn-secondary{
+                display: block;
+            }
+        }
+    }
+}
+
+.section-testimonial{
+    height: 70vh;
+
+    .testimonial-content{
+        padding-top: 24vw;
+    }
+
+    .button{
+        text-align: center;
+        margin-top: 1.5rem;
+        margin-bottom: 1rem;
+        .btn{
+            padding: 1rem 6rem;
+            font-size: calc(.6rem + 1vw);
+        }
+        
+    }
+}
+
+}
+
+@media(max-width: 500px){
+// HERO
+
+.listing-hero{
+    height: 40vh;
+}
+    .section-heading{
+        font-size: calc(2rem + 2vw);
+    }
+
+
+
+    // PLAZA
+    .listing-plaza{
+        .container{
+          padding-top: 1.5rem;
+        }
+        .plaza-card{
+            z-index: 5;
+            .button{
+                .btn-secondary{
+                    padding: .7rem 1.2rem;
+                }
+            }
+        }
+    }
+
+    // FOOTER TESTIMONIAL
+
+    .section-testimonial{
+        height: 50vh;
+    
+        .testimonial-content{
+            padding-top: 32vw;
+        }
+    
+        .button{
+            text-align: center;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+            .btn{
+                padding: 1rem 1.5rem;
+                font-size: calc(.6rem + 1vw);
+            }
+            
+        }
+    }
+    
+
+}

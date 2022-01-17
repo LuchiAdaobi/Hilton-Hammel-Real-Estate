@@ -1,0 +1,111 @@
+// ABOUT HERO
+
+.about-hero{
+    @include hero();
+    background: url(/images/about/about-hero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 80vh;
+
+    .section-heading{
+        padding: 2.5rem 20rem;
+        font-size: calc(2.9rem + 2vw);
+    }
+}
+
+// TEAM
+.about-team{
+    padding: 6rem 0;
+    .team-content{
+
+        .member-1{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 7rem;
+            img{
+                max-width: 50%;
+            }
+        }
+        .member-2{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 7rem;
+            margin-top: 7rem;
+            img{
+                max-width: 50%;
+            }
+        }
+        .member-desc{
+            
+            .heading{
+                color: black;
+                margin-top: 8rem;
+                font-size: calc(2.2rem + 2vw);
+            }
+
+            .desc{
+                line-height: 1.9;
+                font-size: calc(.7rem + .7vw);
+                margin: 2rem auto;
+            }
+        }
+      
+    }
+}
+
+
+// MEDIA QUERIES
+
+@media(max-width: 950px){
+
+    .about-hero{
+        .hero-content {
+            width: 80vw;
+            .section-heading{
+                    padding: 1.5rem 1rem;
+                    font-size: calc(2.9rem + 3vw);
+            }
+        }
+    }
+
+    .about-team{
+        .team-content{
+            .member-1, .member-2{
+                gap: 4rem;
+            }
+        }
+    }
+}
+
+@media(max-width: 820px){
+    .about-team{
+        .team-content{
+            
+            .member-1, .member-2{
+                flex-direction: column;
+                gap: 1rem;
+
+                img{
+                    max-width: 80%;
+                }
+            }
+            .member-desc{
+                .heading{
+                    text-align: left;
+                }
+                .desc{
+                    font-size: calc(.9rem + .7vw);
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 500px){
+    .about-hero{
+        height: 50vh;
+    }
+}

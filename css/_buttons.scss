@@ -1,0 +1,41 @@
+%btn{
+    background: transparent;
+    color: #fff;
+    text-transform: uppercase;
+    border: 1px solid #fff;
+    padding: .7rem 1.3rem;
+    font-size: .8rem;
+    font-weight: 700;
+    transition: hover .3s ease;
+    cursor: pointer;
+
+     &:hover{
+        background: #fff;
+        color: $primary-color ;
+     }
+}
+    .button{
+
+        .btn{
+            @extend %btn;
+        }
+    }
+   
+   
+
+
+.btn-secondary{
+    @extend %btn;
+    border: 1px solid $primary-color;
+    color: $primary-color;
+    display: block;
+    text-align: center;
+    font-size: 1.1rem;
+    font-family: $secondary-font;
+    font-weight: 500;
+
+    &:hover{
+        background: $primary-color;
+        color: white;
+     }
+}

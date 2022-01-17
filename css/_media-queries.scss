@@ -1,0 +1,109 @@
+// // MEDIA QUERIES
+// @media(max-width: 950px) {
+
+//     // HAMBURGER-MENU
+//     .header{
+      
+//         .logo{
+            
+//             img{
+//                 max-width: 100px;
+//             }
+//         }
+//         i{
+//             color: #fff;
+//             display: block;
+//             font-size: 1.4rem; 
+//             cursor: pointer; 
+//             z-index: 3; 
+//         }
+
+//         .menu-bar{
+//              &#close-btn{
+//                 padding-left: 1.8rem;
+//                 padding-top: 1.5rem;
+//                 padding-bottom: .8rem;
+
+//             }
+//         }
+//             .navbar{
+//                 display: block;
+//                 position: fixed;
+//                 top: 0;
+//                 right: -100%;
+//                 height: 100vh;
+//                 z-index: 3;
+//                 transition: all .3s ease;
+
+//                 &.active{
+//                     right: 0;
+//                 }
+                
+                
+//                 .button{
+//                         margin-left: 0;
+    
+//                     }
+//             }
+    
+//             nav{
+//                 background-color: #000; 
+//                  height: 100vh;
+//                  transition: all .3s ease;  
+//                 ul{
+//                     display: block;
+//                     align-items: center;
+//                     // transition: all .3s ease;
+                    
+//                     li{
+//                         padding: 1rem;
+//                         padding-left: 0;
+//                         margin-left: 1.5rem;
+//                         // transition: all .3s ease;
+                        
+//                         a{
+//                             padding-bottom: .8rem;
+//                             // display: inline-block;
+//                             padding-left: .3rem;
+//                             transition: all .3s ease;
+//                             // animation: fromLeft .3s ease;
+
+//                             &:hover:not(.btn){
+//                                 border-bottom: none !important;
+//                                 border-left: 3px solid $primary-color;
+                                
+//                             }
+//                         }
+//                         .active{
+//                             border-left: 3px solid $primary-color;
+//                             border-bottom: 0px;
+                            
+//                         }
+//                     }
+    
+//                 }
+//             }
+
+      
+//     }
+    
+
+//     // FEATURED
+
+//     .featured{
+//         .section-title{
+            
+        
+//             &::after {
+               
+//                 top: -20px;
+//             }
+//         }
+//     }
+
+//     // CONTACT
+
+//     .contact{
+//         padding: 1rem;
+//     }
+// }
