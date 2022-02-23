@@ -26,10 +26,6 @@ document.querySelectorAll(".button").forEach(i => i.addEventListener(
     }
 ));
 
-// openPopup.addEventListener('click', () => {
-//     popUp.classList.add('show');
-// });
-
 closePopUp.addEventListener('click', () => {
     popUp.classList.remove('show')
 })

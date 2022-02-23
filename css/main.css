@@ -655,6 +655,8 @@ img {
   transition: all .4s ease;
   -webkit-transform: translate3d(0, 100%, 0);
           transform: translate3d(0, 100%, 0);
+  margin: 0 auto;
+  width: 100%;
 }
 
 .popup.show {
@@ -675,7 +677,7 @@ img {
           align-items: center;
   width: 55vw;
   margin: 0 auto;
-  padding-top: 8vw;
+  padding-top: 8rem;
 }
 
 .popup .popup-content .left {
@@ -1593,12 +1595,12 @@ header {
   .testimonial .plaza .plaza-content .button .btn {
     padding: 1rem 1.5rem;
   }
-  .plaza .plaza-content .heading {
+  .testimonial .plaza .plaza-content .heading {
     font-size: calc(1rem + 1vw);
     text-align: left;
     margin-top: .8rem;
   }
-  .plaza .plaza-content .button .btn {
+  .testimonial .plaza .plaza-content .button .btn {
     padding: 1rem 1.5rem;
   }
 }
